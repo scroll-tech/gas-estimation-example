@@ -21,9 +21,11 @@
     "solidity-coverage": "^0.8.0",
     "ts-node": ">=8.0.0",
     "typechain": "^8.1.0",
-    "typescript": ">=4.5.0"
+    "typescript": ">=4.5.0",
+    "dotenv": "^16.1.4"
   },
   "scripts": {
-    "test": "hardhat test"
+    "test": "hardhat test",
+    "compile": "hardhat compile"
   }
 }
