@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "hardhat-dependency-compiler";
 
 require("dotenv").config();
 const {
@@ -24,7 +25,12 @@ const config: HardhatUserConfig = {
       accounts: [`0x${PRIVATE_KEY}`]
     }
   },
-  defaultNetwork: "scroll"
+  defaultNetwork: "scroll",
+  dependencyCompiler: {
+    paths: [
+      "@scroll-tech/contracts/L2/predeploys/IL1GasPriceOracle.sol"
+    ]
+  }
 };
 
 export default config;
