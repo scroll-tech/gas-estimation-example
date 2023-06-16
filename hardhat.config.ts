@@ -23,7 +23,8 @@ const config: HardhatUserConfig = {
       url: RPC_SCROLL,
       accounts: [`0x${PRIVATE_KEY}`]
     }
-  }
+  },
+  defaultNetwork: "scroll"
 };
 
 export default config;

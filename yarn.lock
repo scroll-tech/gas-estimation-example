@@ -701,6 +701,11 @@
     "@nomicfoundation/solidity-analyzer-win32-ia32-msvc" "0.1.1"
     "@nomicfoundation/solidity-analyzer-win32-x64-msvc" "0.1.1"
 
+"@scroll-tech/contracts@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@scroll-tech/contracts/-/contracts-0.0.3.tgz#570eb935f8bfe2fdd12a5da1d854e49d0b987718"
+  integrity sha512-Xdla4Z6vC3lzLzfdU1YN5IlSGP3FoT9pwPP7gzMCgnl3gfks41k9xVfDUHtzRJsqflkWLXCNL5gT3C/48IkuUw==
+
 "@scure/base@~1.1.0":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.1.tgz#ebb651ee52ff84f420097055f4bf46cfba403938"
