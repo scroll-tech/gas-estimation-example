@@ -11,7 +11,7 @@ export async function buildPopulatedExampleContractTransaction(exampleContractAd
 
 export async function buildUnsignedTransaction(signer: HardhatEthersSigner, populatedTransaction: ContractTransaction): Promise<UnsignedTransaction> {
   const nonce = await signer.getNonce();
-  console.log(populatedTransaction.data)
+
   return {
     data: populatedTransaction.data,
     to: populatedTransaction.to,

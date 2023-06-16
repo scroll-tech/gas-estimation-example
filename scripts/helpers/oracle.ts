@@ -1,4 +1,4 @@
-import {ethers} from "hardhat";
+import { ethers } from "hardhat";
 import { ContractTransaction } from "ethers";
 
 export async function estimateL1DataFee(gasOraclePrecompileAddress: string, unsignedSerializedTransaction: string): Promise<bigint> {
