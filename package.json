@@ -31,6 +31,7 @@
     "gas:estimate": "hardhat run ./scripts/gasEstimation.ts"
   },
   "dependencies": {
+    "@ethersproject/transactions": "^5.7.0",
     "@scroll-tech/contracts": "^0.0.3"
   }
 }
