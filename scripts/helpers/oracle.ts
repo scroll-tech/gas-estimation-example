@@ -4,7 +4,7 @@ import { ContractTransaction } from "ethers";
 export async function estimateL1DataFee(gasOraclePrecompileAddress: string, unsignedSerializedTransaction: string): Promise<bigint> {
   const l1GasOracle = await ethers.getContractAt("IL1GasPriceOracle", gasOraclePrecompileAddress);
 
-  return l1GasOracle.getL1GasUsed(unsignedSerializedTransaction);
+  return l1GasOracle.getL1Fee(unsignedSerializedTransaction);
 }
 
 export async function estimateL2ExecutionFee(tx: ContractTransaction): Promise<bigint> {

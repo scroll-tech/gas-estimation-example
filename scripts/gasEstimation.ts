@@ -7,7 +7,7 @@ import {
   buildPopulatedExampleContractTransaction
 } from "./helpers/transactions";
 import { estimateL1DataFee, estimateL2ExecutionFee } from "./helpers/oracle";
-import { getRandomInt } from "./helpers/utils";
+import { getPercentageDifference, getRandomInt } from "./helpers/utils";
 import { ContractTransaction } from "ethers";
 
 dotenv.config();
@@ -73,9 +73,9 @@ async function main() {
   console.log("\n");
 
   console.log("(actual fee - estimated fee)");
-  console.log("Difference L1 data fee (wei):", (l1DataFee - estimatedFees.estimatedL1DataFee).toString());
-  console.log("Difference L2 execution fee (wei):", (l2ExecutionFee - estimatedFees.estimatedL2ExecutionFee).toString());
-  console.log("Difference total fee (wei): ", (totalFee - estimatedFees.estimatedTotalFee).toString());
+  console.log(`Difference L1 data fee (wei): ${l1DataFee - estimatedFees.estimatedL1DataFee} (${getPercentageDifference(l1DataFee, estimatedFees.estimatedL1DataFee)}%)`);
+  console.log(`Difference L2 execution fee (wei): ${l2ExecutionFee - estimatedFees.estimatedL2ExecutionFee} (${getPercentageDifference(l2ExecutionFee, estimatedFees.estimatedL2ExecutionFee)}%)`);
+  console.log(`Difference total fee (wei): ${totalFee - estimatedFees.estimatedTotalFee} (${getPercentageDifference(totalFee, estimatedFees.estimatedTotalFee)}%)`);
 }
 
 main().catch((error) => {
