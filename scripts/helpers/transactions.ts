@@ -16,8 +16,8 @@ export async function buildUnsignedTransaction(signer: HardhatEthersSigner, popu
     data: populatedTransaction.data,
     to: populatedTransaction.to,
     gasPrice: populatedTransaction.gasPrice,
-    type: populatedTransaction.type,
     gasLimit: populatedTransaction.gasLimit,
+    value: populatedTransaction.value,
     nonce,
   };
 }
