@@ -15,5 +15,5 @@ To run the project, you need:
 4. Run the script using `yarn gas:estimate`
 
 ## Deployments
-📜 Scroll Alpha Testnet:  
-`ExampleContract`: [0xc37ee92c73753B46eB865Ee156d89741ad0a8777](https://blockscout.scroll.io/address/0xc37ee92c73753B46eB865Ee156d89741ad0a8777)
+📜 Scroll Sepolia Testnet:
+`ExampleContract`: [0x0896047894016D417D2dA0bFF5E735cf183494a2](https://sepolia-blockscout.scroll.io/address/0x0896047894016D417D2dA0bFF5E735cf183494a2)
